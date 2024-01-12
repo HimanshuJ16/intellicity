@@ -816,7 +816,7 @@ nav h3 {
 
   #nav-part2 {
       display: flex;
-      /* flex-direction: column; */
+      flex-direction: column;
       opacity: 0;
       margin-bottom: 0vw;
   }
