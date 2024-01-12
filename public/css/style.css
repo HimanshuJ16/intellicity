@@ -789,10 +789,10 @@ nav h3 {
 
 }
 
-#formdiv {
+/* #formdiv {
   display: flex; 
   align-items: center;
-}
+} */
 
 #spam {
   font-size: 1vw; 
@@ -816,7 +816,6 @@ nav h3 {
 #divwork {
   display: flex;
 }
-
 
 @media (max-width:600px) {
 
@@ -1107,12 +1106,13 @@ nav h3 {
     margin-right: 1vw;
     font-weight: 900;
     line-height: 30px;
-}
+  }
 
   .workinfodiv h2 {
     margin-left: 5vw;
     margin-top: 17px;
   }
+
   #page2 #gooey {
       height: 62vw;
       width: 62vw;
