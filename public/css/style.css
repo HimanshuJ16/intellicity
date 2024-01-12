@@ -1113,6 +1113,13 @@ nav h3 {
     margin-top: 17px;
   }
 
+  #formgooey {
+    top: 60%;
+    left: 40%;
+    height: 60vw;
+    width: 60vw;
+  }
+
   #page2 #gooey {
       height: 62vw;
       width: 62vw;
