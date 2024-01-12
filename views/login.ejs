@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <%- include('./includes/head'); -%>
+
+
+  <body>
+  
+    <div id="main">
+      <div id="workpage1">
+        <%- include('./includes/nav.ejs'); %>
+        <br><br>
+        <div id="formdiv">
+          <div style="z-index: 99; margin-left: 1.5vw;">
+            <h1 id="formh1">Connecting cities, <br>empowering futures </h1><br>
+            <p id="formp" style="margin-left: 50%; line-height: 47px; padding-top: .5vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– Your access point to <br>IntelliCity Tech Solutions.</p>
+          </div>         
+          <div id="formgooey">
+  
+          </div>
+          <div style="margin-left: 8%;">
+            <form action="/signup">
+              <h2>Login</h2>
+              <label for="email">Email</label>
+              <input type="text" name="email" required />
+              <div class="email error"></div>
+              <label for="password">Password</label>
+              <input type="password" name="password" required />
+              <div class="password error"></div>
+              <button>login</button>
+              <label for="">Don't have an account? &nbsp;<a href="/signup" style="text-decoration: none; color: blue;">Signup</a></label>
+            </form>
+          </div>
+        </div>
+
+      </div>   
+      <div id="page5">
+              
+      </div>
+      <div id="full-scr">
+          <div id="full-div1">
+  
+          </div>
+      </div>
+    </div>
+
+    
+    <%- include('./includes/footer'); -%>
+    <%- include('./includes/scripts.ejs'); %>
+
+    <script>
+      const form = document.querySelector('form');
+      const emailError = document.querySelector('.email.error');
+      const passwordError = document.querySelector('.password.error');
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // reset errors
+        emailError.textContent = '';
+        passwordError.textContent = '';
+      
+        // get values
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+      
+        try {
+          const res = await fetch('/login', { 
+            method: 'POST', 
+            body: JSON.stringify({ email, password }),
+            headers: {'Content-Type': 'application/json'}
+          });
+          const data = await res.json();
+          console.log(data);
+          if (data.errors) {
+            emailError.textContent = data.errors.email;
+            passwordError.textContent = data.errors.password;
+          }
+          if (data.user) {
+            location.assign('/');
+          }
+        
+        }
+        catch (err) {
+          console.log(err);
+        }
+      });
+    </script>
+  </body>
+</html> 
+
