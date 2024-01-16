@@ -10,11 +10,15 @@
 
 ### For Development Purposes
 ##### (follow the steps below)
-- Open Terminal
-- npm install
-- nodemon app
-  
-NOTE: DO ADD YOUR MONGODB URI IN APP.JS BEFORE STARTING 😊  
+- Open Terminal <br/>
+- ```
+  npm install
+  ```
+- ```
+  nodemon app
+  ```
+> [!NOTE]
+> Add your MongoDB URI in  _APP.JS_ before starting.😊 
 
 ### For More Projects
 - My Portfolio Link https://himanshuj16.github.io/portfolio/projects <br/>
