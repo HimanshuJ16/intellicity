@@ -9,12 +9,12 @@
 - used cookie parser for logout and session purposes.
 
 ### For Development Purposes
-##### (follow the steps below)
-- Open Terminal <br/>
-- ```
+##### ***(follow the steps below)***
+- `Open Terminal` <br/>
+- ```ruby
   npm install
   ```
-- ```
+- ```ruby
   nodemon app
   ```
 > [!NOTE]
