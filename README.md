@@ -1,4 +1,4 @@
-# Node Website Tutorial: Create a Stunning Smart City Website with NodeJS, ExpressJS, Jwt and MongoDB🌟
+# Node Website: Create a Stunning Smart City Website with NodeJS, ExpressJS, Jwt and MongoDB🌟
 
 ### Final Output
 - Link https://intellicity.onrender.com/ <br/>
