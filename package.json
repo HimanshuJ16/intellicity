@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-express-jwt-auth.git"
+    "url": "git+https://github.com/HimanshuJ16/intellicity"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iamshaunjp/node-express-jwt-auth/issues"
+    "url": "https://github.com/HimanshuJ16/intellicity/issues"
   },
-  "homepage": "https://github.com/iamshaunjp/node-express-jwt-auth#readme"
+  "homepage": "https://github.com/HimanshuJ16/intellicity#readme"
 }
